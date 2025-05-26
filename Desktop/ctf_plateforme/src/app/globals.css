@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a192f;
+  --foreground: #8892b0;
+  --primary: #64ffda;
+  --secondary: #112240;
+  --accent: #64ffda;
+  --muted: #8892b0;
+  --card: #112240;
+  --border: #1d2d50;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .ctf-card {
+    @apply bg-[#112240] border border-[#1d2d50] rounded-lg shadow-lg;
+  }
+
+  .ctf-heading {
+    @apply text-[#ccd6f6] font-mono;
+  }
+
+  .ctf-text {
+    @apply text-[#8892b0] font-mono;
+  }
+
+  .ctf-accent {
+    @apply text-[#64ffda] font-mono;
+  }
+
+  .ctf-button {
+    @apply bg-[#64ffda] text-[#0a192f] px-4 py-2 rounded-lg hover:bg-[#4cd8b2] transition-colors font-mono;
+  }
+
+  .ctf-input {
+    @apply bg-[#112240] border border-[#1d2d50] text-[#ccd6f6] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#64ffda] font-mono;
+  }
+}
+
+/* Glitch effect for headings */
+.glitch {
+  text-shadow: 2px 0 #39ff14, -2px 0 #00bfff, 0 2px #00ffea, 0 -2px #39ff14;
+  animation: glitch 1.5s infinite alternate-reverse;
+}
+@keyframes glitch {
+  0% { text-shadow: 2px 0 #39ff14, -2px 0 #00bfff; }
+  20% { text-shadow: -2px 0 #00bfff, 2px 0 #39ff14; }
+  40% { text-shadow: 2px 2px #00ffea, -2px -2px #39ff14; }
+  60% { text-shadow: -2px 2px #00bfff, 2px -2px #39ff14; }
+  100% { text-shadow: 2px 0 #39ff14, -2px 0 #00bfff; }
+}
