@@ -4,14 +4,14 @@
 
 ---
 
-## 🎯 What You'll Achieve
+##  What You'll Achieve
 
 By the end of this guide, you'll have:
-- ✅ Generated 90 days of synthetic solar data for 50 households
-- ✅ Run a 24-hour multi-agent simulation
-- ✅ Started the API server with real-time WebSocket
-- ✅ Tested all major endpoints
-- ✅ Viewed performance metrics
+- Generated 90 days of synthetic solar data for 50 households
+- Run a 24-hour multi-agent simulation
+- Started the API server with real-time WebSocket
+- Tested all major endpoints
+- Viewed performance metrics
 
 ---
 
@@ -30,7 +30,7 @@ df -h .
 
 ---
 
-## 🚀 Step-by-Step Setup
+##  Step-by-Step Setup
 
 ### Step 1: Install Dependencies (2 minutes)
 
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 python -c "import torch; import pandas; import fastapi; print('✅ All dependencies installed!')"
 ```
 
-**Expected output**: `✅ All dependencies installed!`
+**Expected output**: ` All dependencies installed!`
 
 ---
 
@@ -80,12 +80,12 @@ python main.py generate-data
 
 **Expected output**:
 ```
-🔄 Generating synthetic data for 50 houses over 90 days...
-✅ Generated 108000 data points
+ Generating synthetic data for 50 houses over 90 days...
+ Generated 108000 data points
    Total production: 245678.3 kWh
    Total consumption: 198234.5 kWh
-💾 Saved to data/processed/synthetic/community_90days.csv
-💾 Saved house profiles to data/processed/synthetic/house_profiles.csv
+ Saved to data/processed/synthetic/community_90days.csv
+ Saved house profiles to data/processed/synthetic/house_profiles.csv
 ```
 
 **Files created**:
@@ -104,14 +104,14 @@ python main.py simulate --agents 50 --hours 24
 **Expected output**:
 ```
 ============================================================
-🌞 SOLAR SWARM INTELLIGENCE
+   SOLAR SWARM INTELLIGENCE
    IEEE PES Energy Utopia Challenge
 ============================================================
-🐝 Running simulation with 50 agents for 24 hours...
+ Running simulation with 50 agents for 24 hours...
 
-🐝 Starting Solar Swarm Simulation...
+ Starting Solar Swarm Simulation...
 
-📊 Simulation Results (24 hours):
+ Simulation Results (24 hours):
   Solar Usage: 87.3%
   Grid Import: 12.7%
   Energy Shared: 156.4 kWh
@@ -165,7 +165,7 @@ python main.py api
 ```
 INFO:     Started server process
 INFO:     Waiting for application startup.
-INFO:     🚀 Starting Solar Swarm Intelligence API
+INFO:      Starting Solar Swarm Intelligence API
 INFO:        Agents: 50
 INFO:        Battery: 10.0 kWh
 INFO:     Application startup complete.
@@ -316,7 +316,7 @@ Open this file in your browser to see real-time simulation updates!
 
 ---
 
-## 🎉 Success! What You've Accomplished
+##  Success! What You've Accomplished
 
 You now have:
 
@@ -370,7 +370,7 @@ cat data/processed/synthetic/house_profiles.csv
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Problem: "Module not found"
 **Solution**: 
@@ -412,7 +412,7 @@ python main.py simulate --agents 10 --hours 12
 
 ---
 
-## 📊 Understanding the Results
+##  Understanding the Results
 
 ### Solar Utilization (Target: 87%)
 - **What it means**: Percentage of solar energy actually used (not wasted)
@@ -435,7 +435,7 @@ python main.py simulate --agents 10 --hours 12
 
 ---
 
-## 🎯 Performance Benchmarks
+##  Performance Benchmarks
 
 Your system should achieve:
 
@@ -450,7 +450,7 @@ Your system should achieve:
 
 ---
 
-## 📚 Learn More
+##  Learn More
 
 - **Full Documentation**: See `README.md`
 - **Implementation Details**: See `IMPLEMENTATION_SUMMARY.md`
@@ -459,7 +459,7 @@ Your system should achieve:
 
 ---
 
-## 🤝 Need Help?
+##  Need Help?
 
 1. Check the logs: `logs/solar_swarm.log`
 2. Read the error message carefully
@@ -469,7 +469,7 @@ Your system should achieve:
 
 ---
 
-## ✅ Quick Reference Commands
+##  Quick Reference Commands
 
 ```bash
 # Generate data
@@ -496,6 +496,6 @@ Ctrl+C
 
 ---
 
-**🎉 Congratulations! You're now running a multi-agent solar optimization system!**
+** Congratulations! You're now running a multi-agent solar optimization system!**
 
 **Built with ❤️ for a sustainable energy future**
